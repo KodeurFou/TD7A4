@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: app-read-td6
+    ports:
+      - "5000:5000"
+    volumes:
+      - data-td6:/app/data
+volumes:
+  data-td6:
+    external: true
